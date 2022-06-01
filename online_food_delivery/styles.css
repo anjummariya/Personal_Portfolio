@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Bree+Serif&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgb(73, 99, 73);
+    opacity:0.4;
+    height: 12%;
+    
+}
+ul{
+    display:flex;  
+    list-style: none; 
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.navbar ul li a{
+    display: block;
+    padding:10px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration:none
+    
+}
+.navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 4px;
+}
+
+img{
+    width: 70px;
+    margin-right: 50px;
+}
+
+/*HOME*/
+
+#home{
+    display: flex;
+    flex-direction:column;
+    background:url(images/home.jpg) no-repeat  center center/cover;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+#home h1{
+    color:#ed6b07;
+    text-align: center;
+    text-shadow: 2px 2px 3px #fff;  
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/*Services Section*/
+
+.services-container{
+    margin-top:60px;
+}
+#services{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 120px;
+}
+#services .box{
+    border: 2px solid tan;
+    padding:20px;
+    margin:3px 6px;
+    border-radius:28px;
+    width: 400px;
+    background-color:rgb(215, 245, 233,0.3);
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height:156px;
+    width: 175px;
+    margin-top:10px;
+    
+}
+#services p{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+}
+
+/*Client Section*/
+
+#client-section{
+    width: 80%;
+    margin: 100px 120px;
+    margin-bottom: 0;
+    height:500px;
+    position: relative;
+    padding-bottom: 150px;
+    border: 5px solid teal;
+    border-radius: 15px;
+}
+#client-section::before{
+    content: "";
+    background: url(images/client-bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+   
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+}
+#clients .fa-brands{
+    text-align: center;
+    height: 124px;
+    width:150px;
+    font-size: 100px;
+    margin: 20px;
+    color: black;
+}
+
+
+/*Contact Section*/
+
+#contact{
+    position:relative;
+    margin: 30px 120px;
+    margin-right: 180px;
+    border: 5px solid teal;
+    border-radius: 15px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(images/contact.webp) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius:9px;
+     font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:'Bree Serif', serif;
+}
+footer{
+    height: 8vh;
+    background-color: black;
+    color: white;
+    padding:9px 20px ;
+    margin:0 180px 0 130px
+}
+.center{
+    padding-top: 15px;
+}
+
+/*Utility Classes*/
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+.btn{
+    padding:10px 15px;
+    border:2px solid white;
+    border-radius: 3px;
+    background-color:rgb(151, 229, 190);;
+    color:black;
+    cursor: pointer;
+    margin:10px;
+    font-weight: 800;;
+}
+
+.center{
+    text-align: center;
+}
+
+/*  Media Queries  */
+
+@media screen  and (max-width:767.98px){
+    /*navigation8/
+
+/*Home section*/
+.navbar{
+    flex-direction: column;
+    }
+  
+    ul{
+        display:flex; 
+        flex-direction: column; 
+        list-style: none; 
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+    #navbar ul li a{
+        color: black;
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+    #home{
+        height: 100%;
+        padding:10px ;
+    }
+    #home p{
+        font-size: 13px;
+    }
+    /*services*/
+    #services{
+        flex-direction:column;
+        margin: 0;
+    }
+    #services .box { 
+        padding: 14px;
+        width: 100vw;
+        margin:24px auto;
+    }
+    /*Clients section*/
+    #client-section{
+        padding-bottom: 10px;
+        margin: auto;
+        height: 100%;
+    }
+    #clients{
+       flex-wrap: wrap;
+       margin: 0;
+    }
+    #clients img{
+        width: 100px;
+        padding: 6px;
+        height: 100px;
+    }
+    /*contact section*/
+    #contact-box form{
+        width:80%;
+        padding:0px;
+    }
+    #contact{
+        margin: 20px auto;
+        height: 100%;
+        padding: 0;
+        width:80%;
+    }
+    /*footer*/
+    footer{
+        width: 100vw;
+        line-height: 20px;
+        height: 20%;
+        margin:auto;
+
+    }
+    /*Utility Classes*/
+    .h-primary{
+        font-size:26px;
+    }
+    .btn{
+        font-size: 13px;
+        padding: 4px 8px;
+    } 
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+   .navbar{
+       height: 12vh;
+    }
+    #services{
+        flex-direction:column;
+        margin:0;
+    }
+    #services .box { 
+        padding: 14px;
+        width: 100vw;
+        margin: 10px 0;
+       
+    }
+    #client-section{
+        padding-bottom: 10px;
+        margin: 20px auto;
+        height: 100%;
+        width: 100%;
+    }
+    #clients .fa-brands{
+        margin: 8px;
+    }
+    #contact{
+        margin: 20px 0; 
+        width:100%;
+        padding: 0;
+    }
+    #contact-box form{
+        width:75%;
+        padding:0px;
+    }
+    footer{
+        width: 100vw;
+        line-height: 20px;
+        height: 10vh;
+        margin:auto;
+
+    }
+    .center{
+        padding-top: 35px;
+        font-size: 1.3rem;
+    }
+   
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    #services{
+        flex-direction:column;
+        justify-content: center;
+
+    }
+    #services .box { 
+        padding: 14px;
+        width: 600px;
+        margin:10px auto;
+        height: 100%;
+       
+    }
+     #client-section{
+        padding-bottom: 10px;
+        margin: 20px auto;
+        height: 100%;
+        width: 900px;
+    }
+    #clients .fa-brands{
+        margin: 4px;
+    }
+    #contact{
+        margin: 20px auto; 
+        width:900px;
+        padding: 0;
+    }
+    #contact-box form{
+        width:75%;
+        padding:0px;
+    }
+    footer{
+        width: 100vw;
+        line-height: 20px;
+        height: 10vh;
+        margin:auto;
+
+    }
+    .center{
+        padding-top: 20px;
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 227, 227);
+    text-decoration: none;
+}
+body{
+    font-weight: 400;
+}
+/* --Navbar-- */
+#header{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(233, 227, 227);
+}
+nav a{
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 1.3rem;
+    font-weight: 20px;
+    color: black;
+}
+#header-img{
+    width: 200px;
+    height: 50px;
+}
+
+#title{
+    margin: auto;
+}
+
+section #form #email,section #form #submit{
+    display: block;
+    margin:auto
+}
+#email{
+    border: 2px solid grey;
+   padding: 5px 25px 5px 15px;
+   width: 300px;
+  
+}
+::placeholder{
+    text-align: left;
+    font-size:12px;
+   font-weight: 400;
+    
+}
+#submit{
+    background-color: #ebc334;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    padding:5px 10px;
+    padding-left: 15px;
+}
+#features{
+    margin:auto;
+}
+#video{
+ display: block;
+ margin: auto;
+ width:450px;
+height:300px;
+}
+#pricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.type{
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 4px;
+    padding-top: 0;
+}
+.price{
+    font-weight: bolder;
+    font-size: 3000em;
+}
+.type h2{
+    background: rgb(210, 208, 208);
+    width: 100%;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+.type div{
+    text-align: center;
+    padding-bottom:15px;
+    font-size: 1rem;
+}
+::placeholder{
+    font-size: 1.2rem;
+}
+.select{
+    background-color: #f2bf08;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 600;
+    width: 80px;
+    padding: 10px 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height:80px;
+    width: 100%;
+    padding-left: 0;
+    background: rgb(210, 208, 208);
+}
+footer ul{
+    background: rgb(210, 208, 208);
+}
+footer ul li{
+   display: inline-block;
+  margin: 0 15px;
+  margin-bottom: 7px;
+  background: rgb(210, 208, 208);
+}
+.f1 p,.f2 p,.f3 p{
+    font-size: 1.3rem;
+    text-align:left;
+    padding: 15px 0;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    background: rgb(210, 208, 208);
+    font-weight: 700;
+    font-size: 17px;
+    font-family:'Poppins', sans-serif; ;
+}
+/*--Utility Classes*/
+.h-primary{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image{
+    width: 100px;
+    height: 70px;
+
+}
+.fa-solid{
+    float: left;
+    color: orange;
+    font-size: 50px;
+}
+#features div{
+    margin-left: 120px;
+}
+div h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.f1,.f2,.f3{
+    margin: 30px;
+}
+.f3{
+    margin-bottom: 100px;
+}
+span{
+    margin-bottom: 15px;
+    background: rgb(210, 208, 208);
+    font-size: 17px;
+}
+
+
+/*media queries*/
+
+
+@media screen  and (max-width:575.98px){
+ 
+ .fa-solid{
+     display: none;
+ }
+ #features{
+    margin:20px;
+}
+#features div{
+    margin-left: 0px;
+}
+.f1,.f2,.f3{
+    margin: 0px;
+}
+#header-img{
+    width: 80%;
+}
+#pricing{
+    flex-direction: column; 
+}
+footer ul li{
+   display: inline-block;
+ }
+ div h2{
+ margin:2%;
+ text-align: center;
+ }
+ div p{
+     margin: 3%;
+     line-height: 25px;
+     text-align: center;
+ }
+ #title{
+     margin-bottom: 200px;
+ }
+ #video{
+   width: 100%;
+   height: 50vh;      
+}
+#header{
+    flex-direction: column;
+}
+nav a{
+    display: block;
+    text-align: center;
+}
+.nav-link{
+    padding: 10px;
+}
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    #pricing{
+        flex-direction: column;
+    }
+    #features{
+        margin:20px;
+    }
+    
+ }
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    #header-img{
+        width: 35%;
+        height: 5vh;
+    }
+    #video{
+        height: 50vh;
+        width: 70%;
+    }
+    div p{
+        margin: 0;
+    }
+    #features{
+        margin:20px;
+    }
+}
+
+

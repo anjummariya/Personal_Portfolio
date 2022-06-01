@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/da7436c3f6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="#">Game Controllers</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remotes</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br> DualShock 4</h2>
+                <h3>Wireless Controller for PlayStation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now<i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="col-2">
+                <img src="images/controller.png" class="controller">
+                <div class="color-box"></div>
+                    <div class="add-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <p><small>Add&nbsp;to&nbsp;Cart</small></p>
+                    </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+    <script>
+        var menulist=document.getElementById("menulist");
+        menulist.style.maxHeight="0px";
+        function togglemenu(){
+            if( menulist.style.maxHeight=="0px")
+            {
+                menulist.style.maxHeight="130px";
+            }
+            else{
+                menulist.style.maxHeight="0px";
+            
+            }
+        }
+    </script>
+    
+</body>
+</html>
